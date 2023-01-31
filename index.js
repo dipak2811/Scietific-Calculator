@@ -59,7 +59,7 @@ function cot() {
 
 function asin() {
     if (z) {
-        display.value = (Math.PI / 180 * Math.asin(display.value)).toFixed(5);
+        display.value = (180 / Math.PI * Math.asin(display.value)).toFixed(5);
     }
     else {
         display.value = Math.asin(display.value).toFixed(5);
@@ -68,7 +68,7 @@ function asin() {
 
 function acos() {
     if (z) {
-        display.value = (Math.PI / 180 * Math.acos(display.value)).toFixed(5);
+        display.value = (180 / Math.PI * Math.acos(display.value)).toFixed(5);
     }
     else {
         display.value = Math.acos(display.value).toFixed(5);
@@ -77,7 +77,7 @@ function acos() {
 
 function atan() {
     if (z) {
-        display.value = (Math.PI / 180 * Math.atan(display.value)).toFixed(5);
+        display.value = (180 / Math.PI * Math.atan(display.value)).toFixed(5);
     }
     else {
         display.value = Math.atan(display.value).toFixed(5);
@@ -86,7 +86,7 @@ function atan() {
 
 function asec() {
     if (z) {
-        display.value = (Math.PI / 180 * (Math.acos(1 / display.value))).toFixed(5);
+        display.value = (180 / Math.PI * (Math.acos(1 / display.value))).toFixed(5);
     }
     else {
         display.value = 1 / Math.acos(display.value).toFixed(5);
@@ -95,7 +95,7 @@ function asec() {
 
 function acsc() {
     if (z) {
-        display.value = (Math.PI / 180 * (Math.asin(1 / display.value))).toFixed(5);
+        display.value = (180 / Math.PI * (Math.asin(1 / display.value))).toFixed(5);
     }
     else {
         display.value = 1 / Math.asin(display.value).toFixed(5);
@@ -104,12 +104,13 @@ function acsc() {
 
 function acot() {
     if (z) {
-        display.value = (Math.PI / 180 * (Math.atan(1 / display.value))).toFixed(5);
+        display.value = (180 / Math.PI * (Math.atan(1 / display.value))).toFixed(5);
     }
     else {
         display.value = 1 / Math.atan(display.value).toFixed(5);
     }
 }
+
 
 function sinh() {
     display.value = (Math.sinh(display.value)).toFixed(5);
